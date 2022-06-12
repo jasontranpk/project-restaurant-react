@@ -14,11 +14,11 @@ code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
 		monospace;
 }
-#root {
+.App {
 	display: flex;
 	flex-direction: column;
 	height: 100vh;
-	background: url(./images/bg-restaurant.jpg);
+	background: url(../images/bg-restaurant.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
