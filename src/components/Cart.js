@@ -1,10 +1,10 @@
-function Menu() {
+function Cart() {
 	return (
 		<main>
 			<div className='container'>
-				<h1>Menu</h1>
+				<h1>Cart</h1>
 			</div>
 		</main>
 	);
 }
-export default Menu;
+export default Cart;
