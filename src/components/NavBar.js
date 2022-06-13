@@ -2,7 +2,8 @@ import '../styles/NavBar.css';
 import { Link } from 'react-router-dom';
 import cartImg from '../images/cart.png';
 
-function NavBar() {
+function NavBar(props) {
+	console.log(props);
 	return (
 		<header>
 			<ul className='top-nav'>
@@ -12,12 +13,15 @@ function NavBar() {
 				<Link className='nav-link' to='/menu'>
 					<li>Menu</li>
 				</Link>
-				<Link className='nav-link' to='/aboutus'>
+				<Link className='nav-link' to='/about'>
 					<li>About Us</li>
 				</Link>
 				<Link className='nav-link' to='/cart'>
-					<li className='icon'>
-						<img src={cartImg} />
+					<li className='nav-cart'>
+						<img className='icon' src={cartImg} />{' '}
+						<span className='cart-counter'>
+							{props.total === 0 ? '' : props.total}
+						</span>
 					</li>
 				</Link>
 			</ul>

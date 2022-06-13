@@ -46,12 +46,30 @@ header {
 .icon {
 	display: flex;
 }
-.icon img {
+.icon {
 	width: 35px;
+	cursor: pointer;
+}
+.icon.svg {
+	filter: invert(100%) sepia(3%) saturate(0%) hue-rotate(252deg)
+		brightness(105%) contrast(105%);
 }
 .nav-link {
 	text-decoration: none;
 	color: white;
+}
+.nav-cart {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.cart-counter {
+	min-width: 20px;
+	font-size: 12px;
+	background: #ff0000;
+	color: #fff;
+	padding: 0 5px;
+	border-radius: 5px;
 }
 /* MAIN */
 main {
